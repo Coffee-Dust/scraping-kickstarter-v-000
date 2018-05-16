@@ -12,7 +12,7 @@ def create_project_hash
     title = project_card.css(".bbcard_name strong a").text
     projects[title.to_sym] = {
       image_link: project_card.css(".project-thumbnail a img").attribute("src"),
-      description: project_card.css("p.bbcard_blurb").text,
+      description: project_card.css(".bbcard_blurb").text,
       location: project_card.css(".project-meta span.location-name").text,
       percent_funded: project_card.css(".project-stats .first.funded strong").text.to_i
     }
