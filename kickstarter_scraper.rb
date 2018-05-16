@@ -7,7 +7,9 @@ def create_project_hash
 
   projects = {}
 
-  kickstarter.css("#projects_list .project.grid_4")
+  kickstarter.css("#projects_list .project.grid_4").each do |project_card|
+
+  end
 
   projects
 end
