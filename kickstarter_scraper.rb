@@ -14,8 +14,7 @@ def create_project_hash
       description: project_card.css("p.bbcard_blurb").text
       location: project_card.css(".project-meta span.location-name").text
       percent_funded: project_card.css(".project-stats .first.funded strong").text
-    }#end projects hash
+    }
   end
-
   projects
 end
